@@ -1,0 +1,22 @@
+info:
+  name: Modificar
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3000/api/v1/especialidades/19
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "nuevita"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

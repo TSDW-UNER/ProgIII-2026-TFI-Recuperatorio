@@ -1,0 +1,19 @@
+info:
+  name: Restaurar
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3000/especialidades/borradas/:id_especialidad
+  params:
+    - name: id_especialidad
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
